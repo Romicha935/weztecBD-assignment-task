@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "Maple Grove Villa",
+    "price": 500,
+    "location": "New York, USA",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "size": "5000 sqft",
+    "type": "Villa",
+    "suburb": "Eshelby Drive, Cannonavale",
+    "amenities": ["Private Pool", "Parking"],
+    "main_image": "https://i.ibb.co/4mt7Qfj/house1.jpg",
+    "sub_images": [
+      "https://i.ibb.co/4mt7Qfj/house1.jpg",
+      "https://i.ibb.co/3MnSYrY/house11.jpg",
+      "https://i.ibb.co/NVnHcsg/house7.jpg",
+      "https://i.ibb.co/X7jqFRg/house6.jpg",
+      "https://i.ibb.co/ckxK7fB/house9.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sunset Apartments",
+    "price": 420,
+    "location": "New York, USA",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "size": "3500 sqft",
+    "type": "Apartment",
+    "suburb": "2-6 Eshelby Drive, Cannonavale",
+    "amenities": ["Pet-friendly"],
+    "main_image": "https://i.ibb.co/6X0cV3H/house2.jpg",
+    "sub_images": [
+      "https://i.ibb.co/6X0cV3H/house2.jpg",
+      "https://i.ibb.co/zH5TgHq/house3.jpg",
+      "https://i.ibb.co/vxJ9wBt/house4.jpg",
+      "https://i.ibb.co/0YyJ0gM/house5.jpg",
+      "https://i.ibb.co/1my1mVh/house8.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Riverside House",
+    "price": 390,
+    "location": "New York, USA",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "size": "4000 sqft",
+    "type": "House",
+    "suburb": "59/3 Eshelby Drive, Cannonavale",
+    "amenities": ["Parking", "Private Pool"],
+    "main_image": "https://i.ibb.co/zH5TgHq/house3.jpg",
+    "sub_images": [
+      "https://i.ibb.co/zH5TgHq/house3.jpg",
+      "https://i.ibb.co/42jF0Lz/house10.jpg",
+      "https://i.ibb.co/M2WQy2C/house12.jpg",
+      "https://i.ibb.co/3MnSYrY/house11.jpg",
+      "https://i.ibb.co/ckxK7fB/house9.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Golden Townhouse",
+    "price": 350,
+    "location": "New York, USA",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "size": "3200 sqft",
+    "type": "Townhouse",
+    "suburb": "Eshelby Drive, Cannonavale",
+    "amenities": ["Private Pool", "Parking"],
+    "main_image": "https://i.ibb.co/0YyJ0gM/house5.jpg",
+    "sub_images": [
+      "https://i.ibb.co/0YyJ0gM/house5.jpg",
+      "https://i.ibb.co/X7jqFRg/house6.jpg",
+      "https://i.ibb.co/4mt7Qfj/house1.jpg",
+      "https://i.ibb.co/6X0cV3H/house2.jpg",
+      "https://i.ibb.co/zH5TgHq/house3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Oceanfront Land",
+    "price": 300,
+    "location": "New York, USA",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size": "10000 sqft",
+    "type": "Land",
+    "suburb": "2-6 Eshelby Drive, Cannonavale",
+    "amenities": [],
+    "main_image": "https://i.ibb.co/42jF0Lz/house10.jpg",
+    "sub_images": [
+      "https://i.ibb.co/42jF0Lz/house10.jpg",
+      "https://i.ibb.co/4mt7Qfj/house1.jpg",
+      "https://i.ibb.co/0YyJ0gM/house5.jpg",
+      "https://i.ibb.co/6X0cV3H/house2.jpg",
+      "https://i.ibb.co/3MnSYrY/house11.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Urban Acrange",
+    "price": 380,
+    "location": "New York, USA",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "size": "5500 sqft",
+    "type": "Acrange",
+    "suburb": "59/3 Eshelby Drive, Cannonavale",
+    "amenities": ["Pet-friendly", "Parking"],
+    "main_image": "https://i.ibb.co/ckxK7fB/house9.jpg",
+    "sub_images": [
+      "https://i.ibb.co/ckxK7fB/house9.jpg",
+      "https://i.ibb.co/6X0cV3H/house2.jpg",
+      "https://i.ibb.co/42jF0Lz/house10.jpg",
+      "https://i.ibb.co/0YyJ0gM/house5.jpg",
+      "https://i.ibb.co/4mt7Qfj/house1.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Hillside Villa",
+    "price": 460,
+    "location": "New York, USA",
+    "bedrooms": 7,
+    "bathrooms": 5,
+    "size": "6000 sqft",
+    "type": "Villa",
+    "suburb": "Eshelby Drive, Cannonavale",
+    "amenities": ["Private Pool", "Parking", "Pet-friendly"],
+    "main_image": "https://i.ibb.co/7jNwGgL/house13.jpg",
+    "sub_images": [
+      "https://i.ibb.co/7jNwGgL/house13.jpg",
+      "https://i.ibb.co/1Q8qfjD/house14.jpg",
+      "https://i.ibb.co/9r5V9tM/house15.jpg",
+      "https://i.ibb.co/8Zt8nH1/house16.jpg",
+      "https://i.ibb.co/2Y2HkZQ/house17.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Skyline Apartments",
+    "price": 430,
+    "location": "New York, USA",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "size": "4500 sqft",
+    "type": "Apartment",
+    "suburb": "2-6 Eshelby Drive, Cannonavale",
+    "amenities": ["Pet-friendly"],
+    "main_image": "https://i.ibb.co/TL0wH5K/house18.jpg",
+    "sub_images": [
+      "https://i.ibb.co/TL0wH5K/house18.jpg",
+      "https://i.ibb.co/WvV5s5X/house19.jpg",
+      "https://i.ibb.co/MBL9V7V/house20.jpg",
+      "https://i.ibb.co/2vLpK5S/house21.jpg",
+      "https://i.ibb.co/qFx2n5r/house22.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Lakeside Townhouse",
+    "price": 410,
+    "location": "New York, USA",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "size": "5000 sqft",
+    "type": "Townhouse",
+    "suburb": "59/3 Eshelby Drive, Cannonavale",
+    "amenities": ["Parking", "Private Pool"],
+    "main_image": "https://i.ibb.co/3Wk0N4G/house23.jpg",
+    "sub_images": [
+      "https://i.ibb.co/3Wk0N4G/house23.jpg",
+      "https://i.ibb.co/q7wGqJX/house24.jpg",
+      "https://i.ibb.co/WFB0XqB/house25.jpg",
+      "https://i.ibb.co/Y3mz8MK/house26.jpg",
+      "https://i.ibb.co/NFZs1F1/house27.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Crescent Land",
+    "price": 320,
+    "location": "New York, USA",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "size": "8000 sqft",
+    "type": "Land",
+    "suburb": "Eshelby Drive, Cannonavale",
+    "amenities": [],
+    "main_image": "https://i.ibb.co/Nx3nGJH/house28.jpg",
+    "sub_images": [
+      "https://i.ibb.co/Nx3nGJH/house28.jpg",
+      "https://i.ibb.co/PtL7H5N/house29.jpg",
+      "https://i.ibb.co/Kxw5HqZ/house30.jpg",
+      "https://i.ibb.co/0G2V4sD/house31.jpg",
+      "https://i.ibb.co/8mY6x9M/house32.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Meadow House",
+    "price": 370,
+    "location": "New York, USA",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "size": "4800 sqft",
+    "type": "House",
+    "suburb": "2-6 Eshelby Drive, Cannonavale",
+    "amenities": ["Private Pool", "Parking"],
+    "main_image": "https://i.ibb.co/Hx3V1Zk/house33.jpg",
+    "sub_images": [
+      "https://i.ibb.co/Hx3V1Zk/house33.jpg",
+      "https://i.ibb.co/K2v8L4T/house34.jpg",
+      "https://i.ibb.co/8t2gG8V/house35.jpg",
+      "https://i.ibb.co/WF2s5VB/house36.jpg",
+      "https://i.ibb.co/M2V9n8J/house37.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Seaside Villa",
+    "price": 480,
+    "location": "New York, USA",
+    "bedrooms": 7,
+    "bathrooms": 5,
+    "size": "7000 sqft",
+    "type": "Villa",
+    "suburb": "59/3 Eshelby Drive, Cannonavale",
+    "amenities": ["Private Pool", "Parking", "Pet-friendly"],
+    "main_image": "https://i.ibb.co/Xy9L8nG/house38.jpg",
+    "sub_images": [
+      "https://i.ibb.co/Xy9L8nG/house38.jpg",
+      "https://i.ibb.co/7jNwGgL/house13.jpg",
+      "https://i.ibb.co/TL0wH5K/house18.jpg",
+      "https://i.ibb.co/3Wk0N4G/house23.jpg",
+      "https://i.ibb.co/Hx3V1Zk/house33.jpg"
+    ]
+  }
+]
