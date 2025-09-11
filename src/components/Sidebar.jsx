@@ -28,7 +28,7 @@ const Sidebar = ({properties,onFilter}) => {
             else setState([...state,value])
     }
   return (
-    <div className='p-4 border-r w-64'>
+    <div className='p-4 border-r w-1/3'>
         <div>
             <div className='flex border border-gray-200 items-center text-sm p-2 justify-between'>
             <h3>Property Prefarance</h3>
