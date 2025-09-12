@@ -2,11 +2,16 @@ import React from 'react'
 import { GiPathDistance } from 'react-icons/gi'
 import { IoBedOutline } from 'react-icons/io5'
 import { LiaBathSolid } from 'react-icons/lia'
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({property}) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+       navigate(`/property/${property.id}`)
+  }
 
   return (
-    <div className='border rounded-lg overflow-hidden shadow shadow-lg transition'>
+    <div onClick={handleClick} className='border rounded-lg overflow-hidden shadow shadow-lg transition'>
       <img className='w-full p-4 h-48 object-cover rounded-lg' src={property.main_image} alt={property.title} />
 
       <div className='p-3 text-left'>

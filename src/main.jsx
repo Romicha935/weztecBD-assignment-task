@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Buy from './pages/buy/Buy.jsx'
+import PropertyDetails from './components/PropertyDetails.jsx'
+import properties from '../public/property.json'
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +15,10 @@ const routes = createBrowserRouter([
       {
         path:'/',
       element:<Buy/>
+      },
+      {
+        path:'/property/:id',
+      element:<PropertyDetails properties={properties}/>
       }
     ]
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Sidebar from '../../components/Sidebar'
-import allProperties from '../../../public/house.json'
+import allProperties from '../../../public/property.json'
 import Card from '../../components/Card';
 
 const Home = () => {
