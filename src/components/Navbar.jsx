@@ -51,7 +51,7 @@ const Navbar = () => {
 
             {/* mobile menu */}
             {isMenu && (
-                <div className='md:hidden bg-white w-1/2 pt-10 shadow-lg absolute text-black right-2 mr-6'>
+                <div className='absolute top-full right-0 w-2/3 bg-white shadow-lg p-6 flex flex-col gap-4 md:hidden'>
                 <ul className=' flex flex-col gap-2'>
                 {navLinks.map((link)=> (
                     <NavLink key={link.name} to={link.path} className="text-pink-700"
