@@ -38,7 +38,7 @@ const Navbar = () => {
             {/* right side */}
             <div className='flex gap-4 md:mr-2'>
                 <button className='hover:text-pink-600 flex items-center'><CiHeart /> Favourite</button>
-                <Link to='/login'><button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white cursor-pointer text-xs sm:text-sm md:text-base '>Login Now</button></Link>
+                <Link to='/login'><button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white cursor-pointer text-xs sm:text-sm md:text-base mr-10 '>Login Now</button></Link>
           
 
             {/* mobile menu button */}
