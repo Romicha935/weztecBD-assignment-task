@@ -1,77 +1,84 @@
-import React, { useState } from 'react'
-import { CiHeart } from 'react-icons/ci'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/img/logo.png'
+import React, { useState } from 'react';
+import { CiHeart } from 'react-icons/ci';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/img/logo.png';
 
 const Navbar = () => {
-    const [isMenu,setIsMenu] = useState(false)
+  const [isMenu, setIsMenu] = useState(false);
 
-    const navLinks = [
-        {name:'Buy', path:'/'},
-        {name:'Rent', path:'/'},
-        {name:'Sell', path:'/'},
-        {name:'Agents', path:'/'},
-        {name:'Blogs', path:'/'},
-        {name:'Contact Us', path:'/'},
-    ]
+  const navLinks = [
+    { name: 'Buy', path: '/' },
+    { name: 'Rent', path: '/rent' },
+    { name: 'Sell', path: '/sell' },
+    { name: 'Agents', path: '/agents' },
+    { name: 'Blogs', path: '/blogs' },
+    { name: 'Contact Us', path: '/contact' },
+  ];
+
   return (
-    <nav className=' bg-white fixed py-2 top-0 w-full md:py-4 z-50 shadow'>
-        <div className='container relative mx-auto flex justify-between items-center'>
-            <NavLink to='/' className='flex items-center gap-0'>
-                <h1 className='text-2xl font-bold text-pink-700 pr-7 flex items-center'> <img className='h-8 w-8 text-pink-700' src={logo} alt="" /> WeztecBD</h1>
-            </NavLink>
+    <nav className='bg-white fixed top-0 w-full z-50 shadow'>
+      <div className='container mx-auto flex justify-between items-center py-3 px-4 md:py-4 relative'>
+        {/* Logo */}
+        <NavLink to='/' className='flex items-center gap-2'>
+          <img className='h-8 w-8' src={logo} alt='logo' />
+          <h1 className='text-2xl font-bold text-pink-700'>WeztecBD</h1>
+        </NavLink>
 
-            {/* dekstop menu */}
-            <div>
-                <ul className='hidden md:flex lg:flex gap-6'>
-                {navLinks.map((link)=> (
-                    <NavLink key={link.name} to={link.path} className="text-pink-700"
-                    // className={({isActive})=> isActive ? "text-pink-500" : "text-white"}
-                    >
-                    {link.name}
-                    </NavLink>
-                ))}
-                </ul>
-            </div>
-
-            {/* right side */}
-            <div className='flex gap-4 md:mr-2'>
-                <button className='hover:text-pink-600 flex items-center'><CiHeart /> Favourite</button>
-                <Link to='/login'><button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white cursor-pointer text-xs sm:text-sm md:text-base mr-10 '>Login Now</button></Link>
-          
-
-            {/* mobile menu button */}
-           
-         <button
-         onClick={() => setIsMenu(!isMenu)}
-           className="md:hidden text-2xl text-gray-700 hover:text-pink-700 ml-2"
+        {/* Desktop Menu */}
+        <ul className='hidden md:flex gap-6'>
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.name}
+              to={link.path}
+              className='text-pink-700 hover:text-pink-900'
             >
-            {isMenu ? <FaTimes /> : <FaBars />}
+              {link.name}
+            </NavLink>
+          ))}
+        </ul>
+
+        {/* Right section */}
+        <div className='flex items-center gap-3'>
+          <button className='hidden sm:flex items-center gap-1 hover:text-pink-600'>
+            <CiHeart /> Favourite
+          </button>
+
+          <Link to='/login'>
+            <button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white text-xs sm:text-sm md:text-base'>
+              Login Now
             </button>
+          </Link>
 
-            </div>
-              </div>
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsMenu(!isMenu)}
+            className='md:hidden text-2xl text-gray-700 hover:text-pink-700'
+          >
+            {isMenu ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
-            {/* mobile menu */}
-            {isMenu && (
-                <div className='md:hidden bg-white w-1/2 pt-10 shadow-lg absolute text-black right-2 mr-6'>
-                <ul className=' flex flex-col gap-2'>
-                {navLinks.map((link)=> (
-                    <NavLink key={link.name} to={link.path} className="text-pink-700"
-                    // className={({isActive})=> isActive ? "text-pink-500" : "text-white"}
-                     onClick={()=> setIsMenu(false)}
-                    >
-                    {link.name}
-                    </NavLink>
-                ))}
-                </ul>
-            </div>
-            )}
-
-        
+       
+        {isMenu && (
+          <div className='md:hidden absolute top-full right-0 w-48 bg-white shadow-lg rounded-lg mt-2'>
+            <ul className='flex flex-col gap-2 p-4'>
+              {navLinks.map((link) => (
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  className='text-pink-700 hover:text-pink-900'
+                  onClick={() => setIsMenu(false)}
+                >
+                  {link.name}
+                </NavLink>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
