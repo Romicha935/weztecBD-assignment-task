@@ -49,21 +49,21 @@ const Navbar = () => {
             </div>
               </div>
 
-            {/* mobile menu */}
-            {isMenu && (
-                <div className='absolute top-full right-0 w-2/3 bg-white shadow-lg p-6 flex flex-col gap-4 md:hidden'>
-                <ul className=' flex flex-col gap-2'>
-                {navLinks.map((link)=> (
-                    <NavLink key={link.name} to={link.path} className="text-pink-700"
-                    // className={({isActive})=> isActive ? "text-pink-500" : "text-white"}
-                     onClick={()=> setIsMenu(false)}
-                    >
-                    {link.name}
-                    </NavLink>
-                ))}
-                </ul>
-            </div>
-            )}
+           {/* Mobile Menu */}
+        {isMenu && (
+          <div className="absolute top-full right-0 w-2/3 bg-white shadow-lg p-6 flex flex-col gap-4 md:hidden">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className="text-pink-700 hover:text-pink-600"
+                onClick={() => setIsMenu(false)}
+              >
+                {link.name}
+              </NavLink>
+            ))}
+          </div>
+        )}
 
         
     </nav>
