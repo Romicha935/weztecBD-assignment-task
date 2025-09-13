@@ -14,7 +14,7 @@ const PropertyDetails = ({properties}) => {
   
   return (
     <div className='mt-10 p-4 max-w-full mx-auto'>
-         <img src={property.main_image} alt={property.title}  className='w-full rounded-lg h-96 px-10 rounded-md object-cover' />
+         <img src={property.main_image} alt={property.title}  className='w-full rounded-lg h-96 px-10  object-cover' />
 
          <div className='flex w-full px-10 gap-6 mt-10'>
           {property.sub_images.map((img,idx)=> (

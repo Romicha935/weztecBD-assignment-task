@@ -3,6 +3,7 @@ import Home from './Home'
 import HeroSection from '../../components/HeroSection'
 import TabSection from './TabSection'
 import TestimonialSection from './Testimonials'
+import EssentialTools from './EssentialTools'
 
 const Buy = () => {
   return (
@@ -11,6 +12,7 @@ const Buy = () => {
         <HeroSection/>
         <TabSection/>
         <TestimonialSection/>
+        <EssentialTools/>
     </div>
   )
 }
