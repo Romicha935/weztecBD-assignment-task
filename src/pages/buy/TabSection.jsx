@@ -74,7 +74,7 @@ const TabSection = () => {
                  {/* Active Tab Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-[#42041f] to-pink-200 gap-10 items-center md:max-w-6xl max-w-2xl mx-auto rounded-l-full">
         {/* Left Content */}
-        <div className=" text-white rounded-3xl md:w-[550px] w-96  text-start  pl-44 p-8 ">
+        <div className=" text-white rounded-3xl md:w-[550px] w-full text-start p-6 md:pl-16 lg:pl-44 ">
           <h3 className="text-2xl font-semibold mb-4">{activeContent.title}</h3>
           <p className="text-gray-300 mb-6  text-left w-full ">{activeContent.description}</p>
           <button className="bg-[#2f0316]  px-5 py-2 rounded-full font-medium  transition">
