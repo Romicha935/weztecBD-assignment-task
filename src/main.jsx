@@ -7,6 +7,8 @@ import Buy from './pages/buy/Buy.jsx'
 import PropertyDetails from './components/PropertyDetails.jsx'
 import properties from '../public/property.json'
 import ContactUs from './pages/login/Login.jsx'
+import Login from './pages/login/Login.jsx'
+import SignUp from './pages/login/SignUp.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -23,7 +25,11 @@ const routes = createBrowserRouter([
       },
       {
         path:'/login',
-      element:<ContactUs/>
+      element:<Login/>
+      },
+      {
+        path:'/signup',
+      element:<SignUp/>
       }
     ]
   }

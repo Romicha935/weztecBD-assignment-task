@@ -39,7 +39,7 @@ const Sidebar = ({properties,onFilter}) => {
            <div className='mb-4  '>
            <span className='flex items-center justify-between'> <h3 className='font-semibold mb-2'>Rent Budget</h3>
             -</span>
-             <div className='border  p-2 border-gray-200'>
+             <div className='border flex flex-col md:flex-row  p-2 border-gray-200'>
                  <div className='relative '>
                 <input type="range" min={0} max={1000} value={minPrice}
                  onChange={(e)=> setMinPrice(Number(e.target.value))}
@@ -50,7 +50,7 @@ const Sidebar = ({properties,onFilter}) => {
                 className='w-full absolute h-1 bg-pink-800 rounded-lg appearance-none' /> */}
 
                </div>
-               <div className='flex justify-between items-center px-4 gap-1'>
+               <div className='flex flex-col md:flex-row justify-between items-center px-4 gap-1'>
                 <span className='bg-gray-200 py-0 px-4 rounded-lg '><p className='text-sm text-gray-400'>minimum</p> ${minPrice}</span>
                 <span className='bg-gray-200 py-0 px-4 rounded-lg '><p className='text-sm text-gray-400'>maximum</p> ${maxPrice}</span>
             

@@ -4,8 +4,9 @@ import loginImg from '../../assets/img/login.png'
 import logo from '../../assets/img/logo.png'
 import { FcGoogle } from 'react-icons/fc'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 
-const ContactUs = () => {
+const Login = () => {
    const [email, setEmail] = useState('rownok@gmail.com')
   const [password, setPassword] = useState('password123') 
   const [showPassword, setShowPassword] = useState(false)
@@ -22,8 +23,8 @@ const ContactUs = () => {
               <p className='text-gray-500 mb-6'>Let’s login to grab amazing deal</p>
               
               {/* buttons */}
-              <button className='flex items-center justify-center w-full py-2 mb-3 border rounded-lg hover:bg-gray-100 transition'><FcGoogle className='mr-2 '/> Continue with Google</button>
-              <button className='flex items-center justify-center w-full py-2 mb-3 border rounded-lg hover:bg-gray-100 transition'><FaApple className='mr-2 '/> Continue with Apple</button>
+              <button className='flex items-center justify-center w-full py-2 mb-3 border rounded-lg hover:bg-gray-100 transition cursor-pointer'><FcGoogle className='mr-2 '/> Continue with Google</button>
+              <button className='flex items-center justify-center w-full py-2 mb-3 border rounded-lg hover:bg-gray-100 transition cursor-pointer'><FaApple className='mr-2 '/> Continue with Apple</button>
 
               <form className='space-y-4' action="">
                 <div className='bg-gray-100 text-left px-2'>
@@ -73,7 +74,7 @@ const ContactUs = () => {
                   
               </form>
 
-              <p className='mt-5'>Don't have n account? <a href="#" className='text-pink-700 '>Sign Up</a></p>
+              <p className='mt-5'>Don't have n account? <Link to='/signup'  className='text-pink-700 '>Sign Up</Link></p>
 
             </div>
            
@@ -92,4 +93,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default Login
