@@ -24,7 +24,7 @@ const Navbar = () => {
 
             {/* dekstop menu */}
             <div>
-                <ul className='hidden md:flex gap-6'>
+                <ul className='hidden md:flex lg:flex gap-6'>
                 {navLinks.map((link)=> (
                     <NavLink key={link.name} to={link.path} className="text-pink-700"
                     // className={({isActive})=> isActive ? "text-pink-500" : "text-white"}
@@ -45,7 +45,7 @@ const Navbar = () => {
            
          <button
          onClick={() => setIsMenu(!isMenu)}
-           className="text-2xl text-gray-700 hover:text-pink-700 ml-2"
+           className="text-2xl text-gray-700 hover:text-pink-700 ml-4"
             >
             {isMenu ? <FaTimes /> : <FaBars />}
             </button>
