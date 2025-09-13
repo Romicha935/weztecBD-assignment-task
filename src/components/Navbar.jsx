@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className='bg-white fixed py-2 top-0 w-full md:py-4 z-50 shadow'>
         <div className='container relative mx-auto flex justify-between items-center'>
             <NavLink to='/' className='flex items-center gap-0'>
-                <h1 className='text-2xl font-bold text-pink-700 flex items-center'> <img className='h-8 w-8 text-pink-700' src={logo} alt="" /> WeztecBD</h1>
+                <h1 className='text-2xl font-bold text-pink-700 pr-7 flex items-center'> <img className='h-8 w-8 text-pink-700' src={logo} alt="" /> WeztecBD</h1>
             </NavLink>
 
             {/* dekstop menu */}
