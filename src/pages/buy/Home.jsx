@@ -40,7 +40,7 @@ const Home = () => {
         <Sidebar properties={allProperties} onFilter={setFilteredProperties} />
 
         <div className='flex-1 p-6'>
-           <div className='flex justify-between'>
+           <div className='flex flex-col md:flex-row justify-between'>
              <h2 className='text-xl  mb-4'>Property -  showing results: ({filteredProperties.length})</h2>
 
              {/* sorting */}
@@ -53,7 +53,7 @@ const Home = () => {
              </select>
            </div>
 
-            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full  '>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full  '>
                 {currentProperties.map((property)=> (
                     <Card key={property.id} property={property} />
                       

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { FaApple, FaPhone,  } from 'react-icons/fa'
 import loginImg from '../../assets/img/login.png'
 import logo from '../../assets/img/logo.png'
