@@ -36,34 +36,34 @@ const Navbar = () => {
             </div>
 
             {/* right side */}
-            <div className='flex gap-4 md:mr-20'>
+            <div className='flex gap-4 md:mr-2'>
                 <button className='hover:text-pink-600 flex items-center'><CiHeart /> Favourite</button>
                 <Link to='/login'><button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white cursor-pointer text-xs sm:text-sm md:text-base '>Login Now</button></Link>
           
 
             {/* mobile menu button */}
             <button onClick={()=> setIsMenu(!isMenu)} 
-            className='md:hidden px-10  text-2xl text-gray-700 hover:text-pink-700'>
+            className='md:hidden text-2xl text-gray-700 hover:text-pink-700 mr-9'>
                 {isMenu ? <FaTimes/> : <FaBars/> }
             </button>
             </div>
               </div>
 
-           {/* Mobile Menu */}
-        {isMenu && (
-          <div className="absolute top-full right-0 w-2/3 bg-white shadow-lg p-6 flex flex-col gap-4 md:hidden">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.path}
-                className="text-pink-700 hover:text-pink-600"
-                onClick={() => setIsMenu(false)}
-              >
-                {link.name}
-              </NavLink>
-            ))}
-          </div>
-        )}
+            {/* mobile menu */}
+            {isMenu && (
+                <div className='md:hidden bg-white w-1/2 pt-10 shadow-lg absolute text-black right-2 mr-6'>
+                <ul className=' flex flex-col gap-2'>
+                {navLinks.map((link)=> (
+                    <NavLink key={link.name} to={link.path} className="text-pink-700"
+                    // className={({isActive})=> isActive ? "text-pink-500" : "text-white"}
+                     onClick={()=> setIsMenu(false)}
+                    >
+                    {link.name}
+                    </NavLink>
+                ))}
+                </ul>
+            </div>
+            )}
 
         
     </nav>
