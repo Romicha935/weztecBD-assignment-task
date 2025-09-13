@@ -36,8 +36,10 @@ const Home = () => {
 
 
   return (
-    <div className='flex w-full'>
+    <div className='flex flex-col md:flex-row w-full'>
+        <div className="w-full md:w-1/3">
         <Sidebar properties={allProperties} onFilter={setFilteredProperties} />
+      </div>
 
         <div className='flex-1 p-6'>
            <div className='flex flex-col md:flex-row justify-between'>
