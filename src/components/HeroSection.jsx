@@ -11,7 +11,7 @@ const HeroSection = () => {
             <p className='text-gray-300 max-w-2xl mb-16 '> Create and sell courses, consulting services, and communities – with
           Zero <br /> marketing cost and a built-in sales network.</p>
             {/* email input */}
-            <div className='flex relative flex-row items-center '>
+            <div className='flex flex-col md:flex-row items-center gap-3 w-full max-w-md '>
               <input type="email" placeholder='Enter Your Email Here' className='px-4 py-3 bg-gray-700 rounded-full text-white md:w-72' />
                 <button className='w-full md:w-auto md:px-6 px-4 py-2 rounded-full bg-gradient-to-r from-purple-700 to-blue-500 text-white text-center'>Start for free <br /> 
                 <p className='md:text-xs text-[10px]'>No creadit card Require</p></button>

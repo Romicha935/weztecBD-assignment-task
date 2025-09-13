@@ -13,10 +13,10 @@ const PropertyDetails = ({properties}) => {
   const [mainImage, setMainImage] = useState(property.main_image);
   
   return (
-    <div className='mt-10 p-4 max-w-full mx-auto'>
+    <div className='mt-10 p-4 max-w-5xl mx-auto'>
          <img src={property.main_image} alt={property.title}  className='w-full rounded-lg h-96 px-10  object-cover' />
 
-         <div className='flex w-full px-10 gap-6 mt-10'>
+         <div className='grid grid-cols-3 sm:grid-cols-5 gap-3 mt-6'>
           {property.sub_images.map((img,idx)=> (
             <img key={idx} src={img}  alt={`${property.title} ${idx + 1}`}className=' cursor-pointer w-44 rounded-lg ' onClick={()=>setMainImage(img)} />
           ))}
