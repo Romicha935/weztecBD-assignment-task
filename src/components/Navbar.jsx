@@ -36,14 +36,14 @@ const Navbar = () => {
             </div>
 
             {/* right side */}
-            <div className='flex gap-4'>
+            <div className='flex gap-4 md:mr-20'>
                 <button className='hover:text-pink-600 flex items-center'><CiHeart /> Favourite</button>
                 <Link to='/login'><button className='bg-pink-900 py-1.5 px-3 sm:py-2 sm:px-5 rounded-full text-white cursor-pointer text-xs sm:text-sm md:text-base '>Login Now</button></Link>
           
 
             {/* mobile menu button */}
             <button onClick={()=> setIsMenu(!isMenu)} 
-            className='md:hidden px-10 mr-6 text-2xl text-gray-700 hover:text-pink-700'>
+            className='md:hidden px-10  text-2xl text-gray-700 hover:text-pink-700'>
                 {isMenu ? <FaTimes/> : <FaBars/> }
             </button>
             </div>
