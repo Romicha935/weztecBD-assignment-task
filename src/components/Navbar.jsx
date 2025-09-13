@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import { CiHeart } from 'react-icons/ci'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import logo from '../assets/img/logo.png'
 
 const Navbar = () => {
     const [isMenu,setIsMenu] = useState(false)
 
     const navLinks = [
         {name:'Buy', path:'/'},
-        {name:'Rent', path:'/rent'},
-        {name:'Sell', path:'/sell'},
-        {name:'Agents', path:'/agents'},
-        {name:'Blogs', path:'/blog'},
-        {name:'Contact Us', path:'/contact'},
+        {name:'Rent', path:'/'},
+        {name:'Sell', path:'/'},
+        {name:'Agents', path:'/'},
+        {name:'Blogs', path:'/'},
+        {name:'Contact Us', path:'/'},
     ]
   return (
     <nav className='bg-white fixed py-2 top-0 w-full md:py-4 z-50 shadow'>
         <div className='container relative mx-auto flex justify-between items-center'>
             <NavLink to='/' className='flex items-center gap-0'>
-                <h1 className='text-2xl font-bold text-pink-700'>WeztecBD</h1>
+                <h1 className='text-2xl font-bold text-pink-700 flex items-center'> <img className='h-8 w-8 text-pink-700' src={logo} alt="" /> WeztecBD</h1>
             </NavLink>
 
             {/* dekstop menu */}
@@ -37,7 +38,7 @@ const Navbar = () => {
             {/* right side */}
             <div className='flex gap-4'>
                 <button className='hover:text-pink-600 flex items-center'><CiHeart /> Favourite</button>
-                <button className='bg-pink-900 py-1 px-4 rounded-full text-white'>Login Now</button>
+                <Link to='/login'><button className='bg-pink-900 py-1 px-4 rounded-full text-white cursor-pointer'>Login Now</button></Link>
           
 
             {/* mobile menu button */}
