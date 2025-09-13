@@ -45,7 +45,7 @@ const Navbar = () => {
            
          <button
          onClick={() => setIsMenu(!isMenu)}
-           className="text-2xl text-gray-700 hover:text-pink-700 ml-2"
+           className="md:hidden text-2xl text-gray-700 hover:text-pink-700 ml-2"
             >
             {isMenu ? <FaTimes /> : <FaBars />}
             </button>
